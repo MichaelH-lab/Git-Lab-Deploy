@@ -21,8 +21,8 @@ jobs:
       - name: Deploy to WebApp
         run: |
           az webapp config container set \
-          -g ss-lab-rg \
-          -n sslab-webapp \
+          -g ss-lab-rg-mph \
+          -n sslab-webapp-mph \
           --container-image-name sslablabacmph.azurecr.io/myapp:latest \
           --container-registry-url https://sslablabacmph.azurecr.io \
           --container-registry-user ${{secrets.ACR_USER}} \
